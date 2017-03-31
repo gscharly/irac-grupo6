@@ -1,0 +1,15 @@
+.emisor{
+	color: green;
+}
+
+.receptor{
+	color: red;
+}
+
+#localVideo{
+	width:100%;
+}
+#remoteVideo{
+	width:100%;
+}
+

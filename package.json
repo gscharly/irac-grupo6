@@ -1,0 +1,28 @@
+{
+  "name": "irac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "completeNodeServerWithDataChannel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines":{
+    "node": "x",
+    "npm": "x"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gscharly/irac-grupo6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gscharly/irac-grupo6/issues"
+  },
+  
+    "dependencies":{
+      "node-static":"x",
+      "socket.io":"x"
+    },
+  "homepage": "https://github.com/gscharly/irac-grupo6#readme"
+}
