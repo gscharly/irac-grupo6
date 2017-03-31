@@ -237,10 +237,8 @@ function sendData() {
     
   } 
   //receiveTextarea.value +=  data + '\n';
-
-  
-  
   trace('Sent data: ' + data);
+  document.getElementById("dataChannelSend").value="";
 }
 
 // Handlers...
@@ -286,14 +284,14 @@ function handleReceiveChannelStateChange() {
   trace('Receive channel state is: ' + readyState);
   // If channel ready, enable user's input
   if (readyState == "open") {
-	    dataChannelSend.disabled = false;
-	    dataChannelSend.focus();
-	    dataChannelSend.placeholder = "";
-	    sendButton.disabled = false;
-	  } else {
-	    dataChannelSend.disabled = true;
-	    sendButton.disabled = true;
-	  }
+      dataChannelSend.disabled = false;
+      dataChannelSend.focus();
+      dataChannelSend.placeholder = "";
+      sendButton.disabled = false;
+    } else {
+      dataChannelSend.disabled = true;
+      sendButton.disabled = true;
+    }
 }
 
 // ICE candidates management
@@ -318,7 +316,7 @@ function doCall() {
 
 // Signalling error handler
 function onSignalingError(error) {
-	console.log('Failed to create signaling message : ' + error.name);
+  console.log('Failed to create signaling message : ' + error.name);
 }
 
 // Create Answer
